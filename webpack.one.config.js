@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const path  = require('path')
 
 module.exports = {
   mode: 'production',
@@ -7,6 +8,7 @@ module.exports = {
     b: './src/b.js'
   },
   output: {
+    path: path.resolve('./dist'),
     filename: '[name].js',
     chunkFilename: '[name].common.js'
   },
